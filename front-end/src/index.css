@@ -1,0 +1,18 @@
+/* src/index.css */
+/* Add this at the beginning of the file */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* The rest of your styles below */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Use Roboto font */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Additional styles... */
