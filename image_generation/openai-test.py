@@ -13,10 +13,11 @@ client = OpenAI(api_key=api_key)
 response = client.images.generate(
     model='dall-e-3',
     prompt="""
-    prepare a very simple and extremely modern look certificate with white backgroud
-    and slight red contour used for framing, style use minimalist. incorporate
-    only the following text ["Certificate", "Name of Trainee", "Approved by"]
-    AS-IS. put the text in appropriate place
+    a simple and highly clear block diagram that illustrates the relationship between the following concepts:
+      [Web 3.0 , Blockchain, Wallet and fungible]
+    and non-fungible token, use diagram to show relation between them 
+    make the design simple but incorporate all the concepts
+    and the diagram must be extremely clear 
     """,
     n=1,
     size="1024x1024",
@@ -32,4 +33,4 @@ img_np = np.frombuffer(base64.b64decode(img_data), dtype=np.uint8)
 img = cv2.imdecode(img_np, cv2.IMREAD_COLOR)
 
 # Display the image using OpenCV
-cv2.imwrite('raw_generated_4.png', img)
+cv2.imwrite('diagram.png', img)
