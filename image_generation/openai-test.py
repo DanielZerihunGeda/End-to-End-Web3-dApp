@@ -13,11 +13,11 @@ client = OpenAI(api_key=api_key)
 response = client.images.generate(
     model='dall-e-3',
     prompt="""
-    a simple and highly clear block diagram that illustrates the relationship between the following concepts:
-      [Web 3.0 , Blockchain, Wallet and fungible]
-    and non-fungible token, use diagram to show relation between them 
-    make the design simple but incorporate all the concepts
-    and the diagram must be extremely clear 
+    Design a simple certificate with white backgound and subtle red
+    color. use minimalist and modern style theme. the cirtificate should
+    face straight and center. leave most part of the certificate white and empty.
+    avoid details just simple modern sleek certificate with 10 percent red and  
+    90 percent white and empty.  
     """,
     n=1,
     size="1024x1024",

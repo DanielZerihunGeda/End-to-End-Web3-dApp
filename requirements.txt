@@ -3,3 +3,5 @@ python-dotenv
 openai
 numpy
 Pillow
+Flask
+py-algorand-sdk
