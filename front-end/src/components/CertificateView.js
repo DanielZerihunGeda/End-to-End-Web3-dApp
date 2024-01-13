@@ -5,7 +5,9 @@ import './CertificateForm.css'; // Import additional CSS file for styling
 
 const CertificateForm = () => {
   const [formData, setFormData] = useState({
-    traineeName: '',
+    traineeFirstName: '',
+    traineeLastName: '',
+    traineeMiddleName: '',
     trainingProgram: '',
     dateOfCompletion: '',
     durationOfTraining: '',
@@ -20,7 +22,7 @@ const CertificateForm = () => {
 
   const generateCertificateToken = async () => {
     try {
-      const response = await axios.post('http://localhost:4001/Generate_NFT', formData);
+      const response = await axios.post('http://localhost:5000/Get_metadata', formData);
       console.log(response.data); // handle the response as needed
     } catch (error) {
       console.error('Error generating certificate token:', error);
@@ -33,8 +35,16 @@ const CertificateForm = () => {
       <h1 className="form-title">10 Academy</h1>
       <form>
         <div className="form-group">
-          <label className="form-label">Trainee's Full Name</label>
-          <input type="text" name="traineeName" value={formData.traineeName} onChange={handleInputChange} />
+          <label className="form-label">Trainee's First Name</label>
+          <input type="text" name="traineeFirstName" value={formData.traineeFirstName} onChange={handleInputChange} />
+        </div>
+        <div className="form-group">
+          <label className="form-label">Trainee's Last Name</label>
+          <input type="text" name="traineeLastName" value={formData.traineeLastName} onChange={handleInputChange} />
+        </div>
+        <div className="form-group">
+          <label className="form-label">Trainee's Middle Name</label>
+          <input type="text" name="traineeMiddleName" value={formData.traineeMiddleName} onChange={handleInputChange} />
         </div>
 
         <div className="form-group">

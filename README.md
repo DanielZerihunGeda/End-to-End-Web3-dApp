@@ -50,9 +50,10 @@ step-by-step instructions for setting up the project locally:
 ```bash
 	OPENAI_API_KEY='your_openai_api_key'
 	CREATOR_PRIVATE_KEY="Creator_private_key"
-	CREATOR_ADDRESS="creator public addres"
+	CREATOR_PUBLIC_KEY="creator public addres"
 	ALGOD_TOKEN="Algorand Api token"
 	ALGOD_ADDRESS="http://localhost:4001"
+	CREATOR_MNEMONIC="your_mnemonic_key"
 ```
 5. go to front-end directory: `cd front-end`
 
@@ -63,9 +64,17 @@ step-by-step instructions for setting up the project locally:
 Insert Datas in the given field to create dedicated token for each certificates
 after inserting successfull insertion hit `Generate Certificate token`
 
+![Alt Text 1](capture/ten.jpg) ![Alt Text 2](capture/image.jpg)
+
+After fully insert all necessary information by hitting `Generate Certificate Token` the NFTs can be created.
+For security and certral access store all credentials and hosting addresses inside your .env file
+
+### Back-end
+The back-end have two layers of api post call.
+	1. the first layer of call is initiated by `Algorand_Back-end.py` module.
+	2. the second call will be automatically intiated by `POST_request_to_algorand.py` to post call our NFTs creator module `Algorand_Back-end.py`
 ## Contributing
 
-Include guidelines for contributing to the project. You can point to a separate `CONTRIBUTING.md` file for more details.
 
 ## License
 
