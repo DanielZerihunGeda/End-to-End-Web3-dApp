@@ -1,0 +1,61 @@
+/* src/CertificateForm.css */
+.certificate-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    background-color: transparent; /* Set the logo background to be transparent */
+  }
+  
+  .form-title {
+    color: #e74c3c;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+    font-size: 16px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .generate-button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .generate-button:hover {
+    background-color: #c0392b;
+  }
+  

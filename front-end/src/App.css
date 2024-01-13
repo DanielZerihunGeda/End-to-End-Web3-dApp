@@ -1,6 +1,13 @@
 /* src/App.css */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
 .App {
   text-align: center;
+  padding: 20px;
 }
 
 .certificate-form {
@@ -12,6 +19,17 @@ form {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
 }
 
 button {
