@@ -29,13 +29,12 @@ List the technologies and tools used in the project:
 ### install python frameworks using the following commands on terminal:
 ```bash
 $ pip install requirements.txt
-
-
+```
 ### install frame work from Node Package Manager
 ```bash
 $ cd front-end
 $ npm install
-
+```
 ### Sandbox installation
 
 To install the sandbox, please refer to the [sandbox README](./sandbox/README.md).
@@ -54,7 +53,7 @@ step-by-step instructions for setting up the project locally:
 	CREATOR_ADDRESS="creator public addres"
 	ALGOD_TOKEN="Algorand Api token"
 	ALGOD_ADDRESS="http://localhost:4001"
-
+```
 5. go to front-end directory: `cd front-end`
 
 6. Run the frontend application: `npm start`
